@@ -1,0 +1,30 @@
+name: 开发或文档任务
+description: 定义一个有明确目标和验收条件的任务
+title: "[Task] "
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景与目标
+      description: 当前遇到什么问题？完成后应有什么变化？
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 影响范围
+      description: 列出相关模块、接口与依赖。
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 验收条件
+      description: 写出可检查的结果和验证方式。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 参考资料与后续记录
+      description: 可填写代码链接、实验资料；完成后补充 PR 和验证结果。
